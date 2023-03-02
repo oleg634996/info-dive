@@ -1,0 +1,105 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    background: linear-gradient(to top left, #33ccff 0%, #0033cc67 100%);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+
+
+.container{
+  padding: 15px;
+  height: 100%;
+  background-image: url('./images/Olympic_pictogram_Diving.png');
+  background-position: center; 
+  background-repeat: no-repeat;
+ 
+}
+.title {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 60px;
+  font-weight: 800;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  z-index: 3;
+}
+.select{
+  display: flex;
+  /* justify-content: space-between */
+  justify-content: space-around;
+  margin-bottom: 20px;
+  
+}
+.height-dive{
+  width:130px;
+  height: 40px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 30px;
+  opacity: 0.8;
+  
+}
+.input-dive{
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+   border-radius: 10px;
+   width:130px;
+ height: 35px;
+ margin-bottom: 20px;
+ font-size: 35px;
+ opacity: 0.8;
+}
+.text{
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+  color: #f1f1f1;
+  text-shadow: 2px 2px 2px #ef1c1c;
+
+}
+.coefficient{
+  margin: 0;
+  margin-bottom: 50px;
+  font-size: 30px;
+  font-weight: bold;
+  text-align: center;
+}
+.subtitel{
+  margin: 0;
+  text-align: center;
+  font-size: 30px;
+  margin-bottom: 40px;
+  font-weight: 700;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+}
+.rating{
+  display: flex;
+  justify-content: center;
+}
+.input-rating{
+  border-radius: 10px;
+  width: 40px;
+  height: 30px;
+}
+.input-rating:not(:last-child){
+  margin-right: 15px;
+}
