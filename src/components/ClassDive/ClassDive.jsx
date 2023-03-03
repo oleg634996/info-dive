@@ -18,9 +18,10 @@ const keys = Object.keys(data)
             key={key}
              value={key}
              style={{fontSize:"35px"}}
-             >{key}</option>
-        })}
-           
+             >{key}</option> 
+        }
+        )
+    }
         </select>
         <PositionDive positionData={positionData} onDataDive={onDataDive} />
     </div>)
