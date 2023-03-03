@@ -15,9 +15,9 @@ import { useState } from "react"
     event.target[1].value=""
     event.target[2].value= ""
     }
-console.log(typeof(infoDive))
+
 const score = sum * Number(infoDive)
-console.log(score)
+
  return <form onSubmit={onSubmit}>
     <h2 className="subtitel">Сума стрибка</h2>
     <div class="rating">
@@ -29,7 +29,7 @@ console.log(score)
             />
         })}
     </div>
-    <p className="score">{score}</p>
+    <p className="score">{score.toFixed(2)}</p>
     <button type="submit" className="btn">Розрахувати</button>
  </form>
     // return(
