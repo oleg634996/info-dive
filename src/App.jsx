@@ -14,22 +14,20 @@ function App() {
   const [infoDive, setInfoDive] = useState('')
  
    const onData  =(data)=>{
-     setDataDive(data)
+    setDataDive(data)  
    }
 
    const onInfoDive = (data)=>{
     setInfoDive(data)
    }
-   console.log(data,'data')
-  console.log(dataDive,'dataDive')
-  console.log(infoDive,'infoDive')
 
+console.log(dataDive,"data")
   return (<div className='container'>
     <h1 className='title'>Коефіцієнт складности стрибка</h1>
     <ClassDive  data = {data} onData={onData}/>
     {dataDive ?<NumberDive dataDive = {dataDive} onInfoDive={onInfoDive}/>:<p className='text'>Виберіть усі параметри</p>}
     {infoDive&&<Coefficient infoDive ={infoDive}/>}
-    {infoDive&&<SumDiving/>}
+    {infoDive&&<SumDiving infoDive={infoDive}/>}
    
    
   </div>)

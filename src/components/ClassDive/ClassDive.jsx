@@ -4,6 +4,11 @@ import PositionDive from "../PositionDive/PositionDive"
 const ClassDive = ({data,onData})=>{
    const [positionData,setPositionData]= useState()
 
+//    const onChange = (event)=>{
+//     const value = event.target.value
+//     setPositionData(data[value])
+ 
+//    }
    const onDataDive =(data)=>{
     onData(data)
    }
@@ -11,7 +16,7 @@ const ClassDive = ({data,onData})=>{
 const keys = Object.keys(data)
 
     return (<div className="select">
-        <select className="height-dive" onChange={(event)=>{setPositionData(data[event.target.value])}}>
+        <select className="height-dive" onChange={event=> setPositionData(data[event.target.value])}>
         <option defaultValue></option>
         {keys.map(key =>{
             return <option 

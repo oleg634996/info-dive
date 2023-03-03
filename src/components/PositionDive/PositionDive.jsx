@@ -6,11 +6,11 @@ const PositionDive = ({positionData, onDataDive})=>{
      useEffect(()=>{
        onDataDive(positionDive)
      },[onDataDive,positionDive])
-
+    
     const keys = positionData !== undefined||null? Object.keys(positionData):''
     
     return <>
-       <select className="height-dive" onChange={(event)=>{setPositionDive(positionData[event.target.value])}}>
+       <select className="height-dive" onChange={event => setPositionDive(positionData[event.target.value])}>
         <option defaultValue></option>
         {keys &&keys.map(key=>{
             return <option 
