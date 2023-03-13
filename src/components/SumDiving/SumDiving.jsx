@@ -29,26 +29,9 @@ const score = sum * Number(infoDive)
             />
         })}
     </div>
-    <p className="score">{score.toFixed(2)}</p>
-    <button type="submit" className="btn">Розрахувати</button>
+    <p className="score" style={{fontSize:"30px",fontWeight:"900"}}>{score.toFixed(2)}</p>
+    <button type="submit" className="btn" style={{marginBottom:"10px"}}>Розрахувати</button>
  </form>
-    // return(
-    //     <div>
-    //         <h2 className="subtitel">Сума стрибка</h2>
-    //         <div class="rating">
-    //            {array.map(arr => {
-    //             return <input 
-    //             key={arr} 
-    //             id={arr}
-    //             maxLength='3'
-    //             className="input-rating"
-    //             type='text'
-    //             onChange={event => console.log(Number(event.target.id))}
-    //             />
-    //            })}
-    //         </div>
-    //     </div>
-    // )
  }
 
  export default SumDiving

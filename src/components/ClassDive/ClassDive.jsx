@@ -4,11 +4,7 @@ import PositionDive from "../PositionDive/PositionDive"
 const ClassDive = ({data,onData})=>{
    const [positionData,setPositionData]= useState()
 
-//    const onChange = (event)=>{
-//     const value = event.target.value
-//     setPositionData(data[value])
- 
-//    }
+
    const onDataDive =(data)=>{
     onData(data)
    }

@@ -107,6 +107,8 @@ code {
 }
 .score{
   text-align: center;
+  margin: 0;
+  margin-bottom: 10px;
 }
 .btn{
     display: block;
