@@ -9,7 +9,9 @@ const NumberDive = ({dataDive,onInfoDive})=>{
     return (<div>
         <input 
         className="input-dive"
-        type="text"
+            // type="text"
+            inputMode="numeric"
+            pattern="[0-9]*"
          maxLength="4"
          autoComplete="on" 
          onChange={event=>setValue(event.target.value)}
