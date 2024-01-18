@@ -4,7 +4,8 @@ import './App.css';
 import ClassDive from './components/ClassDive/ClassDive';
 import NumberDive from './components/NumberDive/NumberDive';
 import Coefficient from './components/Coefficient/Coefficient';
-import SumDiving from './components/SumDiving/SumDiving';
+// import SumDiving from './components/SumDiving/SumDiving';
+import Score from './components/Score/Score';
 
 const  diving = require('./index.json')
 
@@ -21,16 +22,21 @@ function App() {
     setInfoDive(data)
    }
 
-console.log(dataDive,"data")
-  return (<div className='container'>
-    <h1 className='title'>Коефіцієнт складности стрибка</h1>
-    <ClassDive  data = {data} onData={onData}/>
-    {dataDive ?<NumberDive dataDive = {dataDive} onInfoDive={onInfoDive}/>:<p className='text'>Виберіть усі параметри</p>}
-    {infoDive&&<Coefficient infoDive ={infoDive}/>}
-    {infoDive&&<SumDiving infoDive={infoDive}/>}
-   
-   
-  </div>)
+// console.log(dataDive,"data")
+  return (
+    <div className="container">
+      <h1 className="title">Коефіцієнт складности стрибка</h1>
+      <ClassDive data={data} onData={onData} />
+      {dataDive ? (
+        <NumberDive dataDive={dataDive} onInfoDive={onInfoDive} />
+      ) : (
+        <p className="text">Виберіть усі параметри</p>
+      )}
+      {infoDive && <Coefficient infoDive={infoDive} />}
+      {infoDive && <Score infoDive={infoDive} />}
+      {/* {infoDive&&<SumDiving infoDive={infoDive}/>} */}
+    </div>
+  );
 }
 
 export default App;

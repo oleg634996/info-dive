@@ -3,7 +3,8 @@ import { useState } from "react"
  
  const SumDiving = ({infoDive})=>{
     const [array ] = useState([1,2,3])
-    const [sum, setSum]=useState()
+     const [sum, setSum] = useState()
+    //  const [inp, setInp] = useState("");    
 
    const  onSubmit= (event)=>{
     event.preventDefault()
@@ -14,19 +15,25 @@ import { useState } from "react"
     event.target[0].value = ""
     event.target[1].value=""
     event.target[2].value= ""
-    }
-
+     }
+     
 const score = sum * Number(infoDive)
 
  return <form onSubmit={onSubmit}>
     <h2 className="subtitel">Сума стрибка</h2>
-    <div class="rating">
+    <div className="rating">
         {array.map(arr=>{
-            return <input type="text"
-            key={arr}
-            id={arr}
-            className="input-rating"
-            />
+            return (
+              <input
+                // value={inp}
+                // onChange={addDot}
+                inputMode="numeric"
+                maxLength={3}
+                key={arr}
+                id={arr}
+                className="input-rating"
+              />
+            );
         })}
     </div>
     <p className="score" style={{fontSize:"30px",fontWeight:"900"}}>{score.toFixed(2)}</p>
